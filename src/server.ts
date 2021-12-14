@@ -6,4 +6,4 @@ app.get('/', (request, response) => {
   return response.json({ message: 'Server Runnig' });
 });
 
-app.listen(3333);
+app.listen(3333, () => console.log('Server Runnig'));

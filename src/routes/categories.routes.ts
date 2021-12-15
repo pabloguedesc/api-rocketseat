@@ -10,4 +10,9 @@ categoriesRoutes.post('/', (request, response) => {
   return response.status(201).json({ message: 'Created' });
 });
 
+categoriesRoutes.get('/', (request, response) => {
+  const allCategories = categoriesRepository.list();
+  return response.status(200).json(allCategories);
+});
+
 export { categoriesRoutes };

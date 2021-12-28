@@ -22,7 +22,7 @@
   ],
   "rules": {
     "camelcase": "off",
-    "prettier/prettier": "error",
+    "prettier/prettier": ["error", { "singleQuote": false }],
     "import/no-unresolved": "error",
     "@typescript-eslint/naming-convention": [
       "error",

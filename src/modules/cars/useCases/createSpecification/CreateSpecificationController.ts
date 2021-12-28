@@ -1,5 +1,5 @@
-import { Request, Response } from 'express';
-import { CreateSpecificationUseCase } from './CreateSpecificationUseCase';
+import { Request, Response } from "express";
+import { CreateSpecificationUseCase } from "./CreateSpecificationUseCase";
 
 class CreateSpecificatioController {
   constructor(private createSpecificationUseCase: CreateSpecificationUseCase) {}
@@ -9,7 +9,7 @@ class CreateSpecificatioController {
 
     this.createSpecificationUseCase.execute({ name, description });
 
-    return response.status(201).json({ message: 'Created' });
+    return response.status(201).json({ message: "Created" });
   }
 }
 

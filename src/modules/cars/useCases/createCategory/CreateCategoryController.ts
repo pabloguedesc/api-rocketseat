@@ -1,5 +1,5 @@
-import { Request, Response } from 'express';
-import { CreateCategoryUseCase } from './CreateCategoryUseCase';
+import { Request, Response } from "express";
+import { CreateCategoryUseCase } from "./CreateCategoryUseCase";
 
 class CreateCategoryController {
   constructor(private createCategoryUseCase: CreateCategoryUseCase) {}
@@ -9,7 +9,7 @@ class CreateCategoryController {
 
     this.createCategoryUseCase.execute({ name, description });
 
-    return response.status(201).json({ message: 'Created' });
+    return response.status(201).json({ message: "Created" });
   }
 }
 

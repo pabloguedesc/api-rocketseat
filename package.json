@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn --poll src/server.ts src/server.ts"
+    "start": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn --poll src/server.ts src/server.ts",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli",
+    "migration:create": "ts-node-dev ./node_modules/typeorm/cli migration:create -n"
   },
   "author": "",
   "license": "ISC",

@@ -52,4 +52,4 @@ class AuthenticateUserUseCase {
   }
 }
 
-export { AuthenticateUserUseCase, IResponse };
+export { AuthenticateUserUseCase };

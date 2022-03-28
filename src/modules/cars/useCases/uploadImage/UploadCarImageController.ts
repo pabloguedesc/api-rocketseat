@@ -1,0 +1,2 @@
+class UploadCarImageController {}
+export { UploadCarImageController };

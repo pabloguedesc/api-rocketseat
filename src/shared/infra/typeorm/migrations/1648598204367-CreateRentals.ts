@@ -40,7 +40,7 @@ export class CreateRentals1648595423673 implements MigrationInterface {
 
             type: "timestamp",
 
-            default: "now()",
+            isNullable: true,
           },
 
           {
@@ -53,6 +53,8 @@ export class CreateRentals1648595423673 implements MigrationInterface {
             name: "total",
 
             type: "numeric",
+
+            isNullable: true,
           },
 
           {
@@ -94,7 +96,7 @@ export class CreateRentals1648595423673 implements MigrationInterface {
 
             referencedColumnNames: ["id"],
 
-            columnNames: ["car_id"],
+            columnNames: ["user_id"],
 
             onDelete: "SET NULL",
 

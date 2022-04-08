@@ -11,7 +11,7 @@ export default {
   // automock: false,
 
   // Stop running tests after `n` failures
-  bail: true, // talk for jest if want stop in first error
+  bail: false, // talk for jest if want stop in first error
 
   // The directory where Jest should store its cached dependency information
   // cacheDirectory: "C:\\Users\\phellipe.dinardi\\AppData\\Local\\Temp\\jest",
